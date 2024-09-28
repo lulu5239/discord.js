@@ -406,6 +406,12 @@ class Message extends Base {
     } else {
       this.interaction ??= null;
     }
+    
+    if(data.interaction_metadata){
+      this.interactionMetadata = data.interaction_metadata;
+    } else {
+      this.interactionMetadata ??= null;
+    }
   }
 
   /**
